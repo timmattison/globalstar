@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<block>
+  <name>digitalresample_ff</name>
+  <key>mytest_digitalresample_ff</key>
+  <category>mytest</category>
+  <import>import mytest</import>
+  <make>mytest.digitalresample_ff($interpamount)</make>
+  <param>
+    <name>interpamount</name>
+    <key>interpamount</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
