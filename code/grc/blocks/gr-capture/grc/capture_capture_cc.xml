@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<block>
+  <name>capture_cc</name>
+  <key>capture_capture_cc</key>
+  <category>capture</category>
+  <import>import capture</import>
+  <make>capture.capture_cc()</make>
+    <sink>
+      <name>in</name>
+      <type>complex</type>
+    </sink>
+    <sink>
+      <name>rms</name>
+      <type>float</type>
+    </sink>
+</block>
