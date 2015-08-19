@@ -8,7 +8,9 @@ import sys
 import json
 import matplotlib.pyplot as plt
 
+from progressbar import ProgressBar, Percentage, Bar
 
+pbar = ProgressBar(widgets=[Percentage(), Bar()], maxval=100).start()
 
 ########## Global Constants ##########
 
@@ -58,7 +60,7 @@ def convertToFloat(data_chunk, corr_buffer_real, corr_buffer_imag):
 def progress(position, file_size):
 
 	percent_done = (float(position) / float(file_size)) * 100
-	print percent_done
+	pbar.update(percent_done)
 
 	return percent_done
 
